@@ -2,7 +2,7 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6JIeSJmYoms":
+      case "6JFQtktpad0":
         Script1();
         break;
   }
@@ -10,6 +10,8 @@ function ExecuteScript(strId)
 
 function Script1()
 {
-  console.log(datacollect);
+  const player = GetPlayer();
+const datacollect = player.GetVar("datacollect");
+console.log(datacollect);
 }
 
