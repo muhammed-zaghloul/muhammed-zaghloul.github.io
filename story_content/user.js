@@ -2,28 +2,19 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5qMqXjunE9g":
+      case "6FPGRqqkZ2b":
         Script1();
         break;
-      case "6XPIUTZnS9m":
+      case "6RrnEbvrDol":
         Script2();
         break;
-      case "6GtWQAWkWqT":
+      case "6Z7g2TozqGZ":
         Script3();
         break;
   }
 }
 
 function Script1()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
-}
-
-function Script2()
 {
   var player = GetPlayer();
  
@@ -41,7 +32,7 @@ storyline =
 }
 }
 
-function Script3()
+function Script2()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
@@ -61,5 +52,14 @@ console.log('Error:', err);
 });
 return false;
 }, 1000);
+}
+
+function Script3()
+{
+  var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+head.appendChild(script)
 }
 
