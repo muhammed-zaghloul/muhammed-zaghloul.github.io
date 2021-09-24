@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "66cJJxQH4th":
+      case "5qMqXjunE9g":
         Script1();
         break;
-      case "6TdxI4TFh6g":
+      case "6XPIUTZnS9m":
         Script2();
         break;
-      case "6LbmU7XeYsx":
+      case "6GtWQAWkWqT":
         Script3();
         break;
   }
@@ -16,24 +16,32 @@ function ExecuteScript(strId)
 
 function Script1()
 {
+  var head = document.getElementsByTagName('head')[0];
+var script = document.createElement('script');
+script.src = '//code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+head.appendChild(script)
+}
+
+function Script2()
+{
   var player = GetPlayer();
  
 //PLACE YOUR WEB APP URL
-WEB_APP_URL = "https://script.google.com/macros/s/AKfycby7rgcDIFctJ7El9a-5iOYDKBdox5DRQZA4_9CM6fHnKiZN1MmuCulBEfoSnGI097OL/exec";
+WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyczR8meTloag8h0bkhOy205Pd2U6j__B9fJZVW_zTfRkItmrWELnOQMSfoMKJ2KpWM/exec";
  
 // STORE ARTICULATE STORYLINE VARIABLES
-// "Columnname_Google_Spreadsheet" : player.GetVar("Name_Storyline_Variable")
+// "Columnname_Google_Spreadsheet" : player.GetVar("NameCollect")
 // ATTENTION: Use a comma if you use multiple Storyline variables
 storyline =
 {
  "date" : new Date().toJSON().slice(0,10), //STORE DATE
- "name" : player.GetVar("name"),
- "email" : player.GetVar("email"),
- "message" : player.GetVar("message")
+ "name" : player.GetVar("NameCollect"),
+
 }
 }
 
-function Script2()
+function Script3()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
@@ -53,14 +61,5 @@ console.log('Error:', err);
 });
 return false;
 }, 1000);
-}
-
-function Script3()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
 }
 
