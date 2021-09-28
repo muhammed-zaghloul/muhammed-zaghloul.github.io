@@ -2,14 +2,8 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6FPGRqqkZ2b":
+      case "5kbAvoYAmON":
         Script1();
-        break;
-      case "6RrnEbvrDol":
-        Script2();
-        break;
-      case "6Z7g2TozqGZ":
-        Script3();
         break;
   }
 }
@@ -30,36 +24,5 @@ storyline =
  "name" : player.GetVar("NameCollect"),
 
 }
-}
-
-function Script2()
-{
-  //DELAY SO JQUERY LIBRARY IS LOADED
-setTimeout(function (){
- 
-//Export to Google
-$.ajax({
-url: WEB_APP_URL,
-type: "POST",
-data : storyline,
-success: function(data)
-{
-console.log(data);
-},
-error: function(err) {
-console.log('Error:', err);
-}
-});
-return false;
-}, 1000);
-}
-
-function Script3()
-{
-  var head = document.getElementsByTagName('head')[0];
-var script = document.createElement('script');
-script.src = '//code.jquery.com/jquery-1.11.0.min.js';
-script.type = 'text/javascript';
-head.appendChild(script)
 }
 
