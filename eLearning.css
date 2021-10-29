@@ -93,9 +93,6 @@ ul a:hover {
     display: inline;
 }
 
-span {
-    font-size: 20pt;
-}
 
 .sidebar {
     grid-area: side;
@@ -107,7 +104,7 @@ span {
 .flexside {
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 
 }
 .footer {
