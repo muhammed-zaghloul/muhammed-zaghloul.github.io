@@ -1,8 +1,9 @@
+
 * {
   margin: 0px;
   padding: 0px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 601px) {
   /* For desktop: */
 #grid_content {
   display: grid;
@@ -33,13 +34,16 @@
       "footer footer"
       ;
   }
-
+  .flexside {
+    display: flex;
+    justify-content: center
+}
 }
 .header{
   grid-area: top;
-  background-color: #2B2E70 ;
+  background-color: #00204D ;
   color: white;
-  border: 2px dashed #2B2E70
+  box-shadow: 0px 3px #00204dcc;
 }
 .header h1 {
   text-align: center;
@@ -47,8 +51,8 @@
 
 .navbar {
   padding: 10px;
-  background-color: #5158D6 ;
-    ;
+  background-color: #00204D ;
+    
 }
 ul li {
   list-style: none;
@@ -64,7 +68,6 @@ ul a {
 }
 ul a:hover {
  background-color:#2B2E70;
- color:#A38C31 ;
 }
 #section {
   grid-area: main;
@@ -74,6 +77,7 @@ ul a:hover {
 #section h1, h2{
   font-family: 'Lobster', sans-serif;
   padding: 5px 0px ;
+  color: #730004;
 }
 
 #section img {
@@ -96,15 +100,19 @@ ul a:hover {
 .side {
   grid-area: side;
   padding: 10px 10px 5px 10px  ;
-  background-color: #F0D878 ;
+  background-color: #003073;
+  color: white;
+  box-shadow: -2px 0px #00307370;
 }
 .flexside {
   display: flex;
-  text-justify: center;
+  align-items: center;
+  justify-content: center
+
 }
 .footer {
   grid-area: footer;
-  background-color: #2B2E70;
+  background-color: #00204D ;
   color: white;
   text-align: center;
   font-size: 18pt;
