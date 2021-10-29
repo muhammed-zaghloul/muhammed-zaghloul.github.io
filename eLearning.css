@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 610px) {
     /* For desktop: */
 #grid_content {
     display: grid;
@@ -19,7 +19,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-    /* For tablets: */ 
+    /* For phones: */ 
     #grid_content {
         display: grid;
         width: 100%;
@@ -33,7 +33,7 @@
         "footer footer"
         ;
     }
-
+  
 }
 .header{
     grid-area: top;
