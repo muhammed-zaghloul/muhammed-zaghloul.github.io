@@ -99,3 +99,20 @@
 .menue__items a:hover {
     background-color: #e21e24d8;
 }
+                                     /* Body Styling */ 
+ #body_content {
+                grid-area: main;
+                font-family: 'Roboto', serif;
+ }
+                                    
+.bodycontent__wrapper {
+    margin: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #00204D ;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+  }

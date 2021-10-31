@@ -102,7 +102,7 @@
 .menue__items a:hover {
     background-color: #e21e24d8;
 }
-
+                                    /* Body Stylings  */
 #body_content {
     grid-area: main;
     font-family: 'Roboto', serif;
@@ -127,7 +127,7 @@
     display: inline;
 }
 
-
+                                                /* Sidebar Stylings  */
 .sidebar {
     grid-area: side;
     padding: 10px 10px 5px 10px  ;
@@ -136,20 +136,63 @@
     box-shadow: -2px 0px #00307370;
 }
 
-.btn__universal {
-    background-color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    box-shadow: inset 2px 0px #0e1014e5;
-  }
-  
+
 .flexside {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
+.register__wraper {
+    background-color: #3971BF;
+    max-width: 350px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px #00204dcc ;
+    border-radius: 5px;
+  }
+  .register__block {
+    box-sizing: border-box;
+    display: flex;
+    margin: 5px ;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  .register__block h3, p {
+    margin: 5px;
+  }
+  .universal_form input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 2px solid rgb(250, 221, 176);
+    border-bottom: 1px dashed rgb(31, 30, 30); 
+    border-radius: 5px;
+    transition: all 0.3 ease; 
+    outline: none;
+  
+  }
+  #btn__universal {
+    background-color: white;
+    max-width: 50%;
+    padding: 10px;
+    border-bottom: none;
+    font-size: 1.2rem;
+    box-shadow: -2px 3px rgb(250, 221, 176) ;
+    border-bottom: none;
+    margin: auto;
+  }
+  #btn__universal:hover {
+    background-color: bisque;
+    box-shadow: inset -2px 3px rgb(247, 247, 247);
+    font-weight: bold;
+    border: none;
+  }
+                            /* Footer Styling*/
 .footer {
     grid-area: footer;
     background-color: #00204D;
