@@ -45,30 +45,68 @@
   color: white;
   box-shadow: 0px 3px #00204dcc;
 }
-.header h1 {
-  text-align: center;
-}
-
-.navbar {
-  padding: 10px;
+.header{
+  grid-area: top;
   background-color: #00204D ;
-    
+  color: white;
+  box-shadow: 0px 3px #00204dcc;
 }
-ul li {
-  list-style: none;
+.header h1 {
+  text-align: left;
   display: inline;
-  padding: 0.2em;
+  margin-left: 1rem;
+
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menudropdown{
+  position: relative;
+  display: inline-block;
+  z-index: 10; 
 }
 
-ul a {
+.dropdown__hover{
+  display: inline-block;
+  padding: 10px;
+  background-color: #00204D;
+  color: white;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.dropdown__hover:hover {
+  background-color: #6068FC ;
+}
+
+.menue__items {
+  position: absolute;
+  display: none; 
+  top: 100%;
+  right: 0%;
+  min-width: 100px;
+  background-color: #c41d23c0;
+}
+
+.menudropdown:hover .menue__items{
+  display: block;
+}
+
+.menue__items a {
   text-decoration: none;
   color: white;
-  margin-left:20%;
-  text-align: center;
+  display: block;
+  font-size: 1.3rem;
+
 }
-ul a:hover {
- background-color:#2B2E70;
+
+.menue__items a:hover {
+  background-color: #e21e24d8;
 }
+
 #section {
   grid-area: main;
   font-family: 'Roboto', serif;
@@ -102,13 +140,21 @@ ul a:hover {
   padding: 10px 10px 5px 10px  ;
   background-color: #003073;
   color: white;
-  box-shadow: -2px 0px #00307370;
+  box-shadow: inset -5px 5px #00307370;
 }
 .flexside {
   display: flex;
   align-items: center;
   justify-content: center
 
+}
+.btn__universal {
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  font-size: 1.2 rem;
+  box-shadow: inset 2px 0px #0e1014e5;
 }
 .footer {
   grid-area: footer;

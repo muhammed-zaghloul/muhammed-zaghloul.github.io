@@ -4,67 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <title>eLearning</title>
-    <link rel="stylesheet" href="eLearning.css">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 <div id="grid_content">
-    <div class="header">
+
+    <div class="header flex">
         <h1>eLearning</h1>
-        <div class="navbar">
-            <ul>
-                <a href="#home"><li>Home</li></a>
-                <a href="about.html"><li>About</li></a>
-                <a href="#eLearning"><li>eLearing</li></a>
-            </ul>
+        <div class="menudropdown flex">
+            <button class="dropdown__hover">Menue</button>
+            <div class="menue__items">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+            </div>
         </div>
-    </div>
-    <div id="body_content">
-        <div class="boxm zoomsim">
-            <h1>Project One</h1>
-            <h2>Zoom Simulation</h2>
-            <P>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.consequatur eligendi unde
-                modi neque Nobis ullam facere consequatur eligendi unde modi neque,consequatur eligendi
-            </P>
-           <P>To check the full project click on the following link</P> 
-          <span><a href="ZoomSim/story.html">Zoom Simulation</a></span> 
-        </div>
-        <div class="boxm  riskman">
-            <h1>Project Two</h1>
-            <h2>Risk Management</h2>
-            <P>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.consequatur eligendi unde
-                modi neque Nobis ullam facere consequatur eligendi unde modi neque,consequatur eligendi
-            </P>
-           <P>To check the full project click on the following link</P> 
-           <span><a href="Risk/story.html">Risk Management</a></span>
-        </div>
-    </div>
-    <div class="sidebar flexside">
-        <div class="boxm">
-            <form action="" class="align">
-                <h3>Services Subscription Form</h3>
-                <p>Your Name </p>
-                <input type="text" placeholder="First Name & Last Name">
-                <p>Your Email </p>
-                <input type="email" placeholder="ex. abcd@gmail.com">
-                <br>
-                <button>Submit</button>
-            </form>
-        </div>
-    </div>
-    <div class="footer">
-        CopyRights &copy; Muhammed Zaghloul
-        <br>
-        2021/2022
-    </div>
+       
 </div>
-    
 </body>
 </html>

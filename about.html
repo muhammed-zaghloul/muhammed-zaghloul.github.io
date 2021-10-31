@@ -8,22 +8,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <title>Instructional Design</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="about.css">
     </head>
 
     <body>
     <div id="grid_content">
 
-        <div class="header">
+        <div class="header flex">
             <h1>eLearning</h1>
-            <div class="navbar">
-                <ul>
-                    <a href="#home"><li>Home</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="index.html"><li>eLearing</li></a>
-                </ul>
+            <div class="menudropdown flex">
+                <button class="dropdown__hover">Menue</button>
+                <div class="menue__items">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="about.html">About</a>
+                </div>
             </div>
         </div>
+        
         <div id="section" >
             <div class="boxm content-one " >
                 <h1>About Us</h1>
@@ -62,7 +64,7 @@
                     <p>Your Email </p>
                     <input type="email" placeholder="ex. abcd@gmail.com">
                     <br>
-                    <button>Submit</button>
+                    <button class="btn__universal">Submit</button>
                 </form>
             </div>
         </div>

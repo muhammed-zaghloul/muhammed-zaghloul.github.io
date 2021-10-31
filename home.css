@@ -1,7 +1,8 @@
-* {
+*{
     margin: 0px;
     padding: 0px;
 }
+                                             /*  Responsiveness */ 
 @media only screen and (min-width: 601px) {
     /* For desktop: */
 #grid_content {
@@ -16,10 +17,7 @@
     "footer footer"
     ;
 }
-.flexside {
-    display: flex;
-    justify-content: center
-}
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -39,6 +37,7 @@
     }
   
 }
+                                     /* Header and menue styles */
 .header{
     grid-area: top;
     background-color: #00204D ;
@@ -51,8 +50,6 @@
     margin-left: 1rem;
 
 }
-
-
 .flex {
     display: flex;
     justify-content: space-between;
@@ -102,59 +99,3 @@
 .menue__items a:hover {
     background-color: #e21e24d8;
 }
-
-#body_content {
-    grid-area: main;
-    font-family: 'Roboto', serif;
-}
-
-#body_content h1, h2{
-    font-family: 'Lobster', sans-serif;
-    padding: 5px 0px ;
-    color: #730004;
-}
-
-
-.boxm {
-    padding: 5px 0px 10px 20px;
-}
-
-.zoomsim p {
-    display: inline;
-}
-
-.riskman p {
-    display: inline;
-}
-
-
-.sidebar {
-    grid-area: side;
-    padding: 10px 10px 5px 10px  ;
-    background-color: #003073;
-    color: white;
-    box-shadow: -2px 0px #00307370;
-}
-
-.btn__universal {
-    background-color: white;
-    padding: 10px;
-    margin: 5px;
-    border: none;
-    box-shadow: inset 2px 0px #0e1014e5;
-  }
-  
-.flexside {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.footer {
-    grid-area: footer;
-    background-color: #00204D;
-    color: white;
-    text-align: center;
-    font-size: 18pt;
-}
-
