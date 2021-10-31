@@ -1,9 +1,7 @@
 * {
     margin: 0px;
-    padding: 0px;
 }
-@media only screen and (min-width: 601px) {
-    /* For desktop: */
+
 #grid_content {
     display: grid;
     width: 100%;
@@ -16,13 +14,8 @@
     "footer footer"
     ;
 }
-.flexside {
-    display: flex;
-    justify-content: center
-}
-}
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     /* For phones: */ 
     #grid_content {
         display: grid;
@@ -31,10 +24,10 @@
         grid-template-columns: 100%vw;
         grid-template-rows: minmax(60px, auto);
         grid-template-areas: 
-        "top"
-        "main"
-        "side"
-        "footer footer"
+        'top'
+        'main'
+        'side'
+        'footer'
         ;
     }
   
