@@ -1,0 +1,22 @@
+dark blue 
+#2B2E70 
+Light blue 
+#5158D6 
+Ligher blue 
+#6068FC 
+
+Fonts 
+#A38C31 Page 
+#F0D878 
+
+Purpule Set
+#7027A3 (violet dark) 
+#F0C273 (cymon) 
+#BE78F0 (violet light) 
+#60F09C (green light) 
+#4BA370 (green dark) 
+
+
+
+#F0F0F0 White 
+#E2E3E3 off 

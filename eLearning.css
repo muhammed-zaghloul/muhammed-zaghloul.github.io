@@ -78,9 +78,9 @@
     position: absolute;
     display: none; 
     top: 100%;
-    right: 0%;
-    min-width: 100px;
-    background-color: #c41d23c0;
+    right: 12%; 
+    min-width: 150px;
+    background-color: white;
 }
 
 .menudropdown:hover .menue__items{
@@ -89,9 +89,10 @@
 
 .menue__items a {
     text-decoration: none;
-    color: white;
+    color: #730004;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    text-align: center;
 
 }
 
@@ -135,6 +136,7 @@
     display: flex;
     flex-direction: column;
 }
+
 span {
     font-weight: bold;
 }
@@ -152,7 +154,6 @@ span {
 }
 
 .boxm button:hover{
-    outline: none;
     background-color: #040ec0 ;
 }
 
