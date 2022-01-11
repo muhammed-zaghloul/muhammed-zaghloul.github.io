@@ -1,0 +1,159 @@
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif; 
+#f44336
+background-color #f1f1f1
+*/ 
+
+/*=============================================
+=           Global           =
+=============================================*/
+
+* { padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+#page-wraper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: minmax(40px,auto);
+    column-gap: 10px;
+}
+/*=============================================
+=            Header         =
+=============================================*/
+#upper-part { 
+    grid-column: span 10;
+    background-color:#f44336 ;
+    height: 40px;
+    box-shadow: 0px 3px #c716096b ;
+}
+.nav-items { 
+    margin: 10px 0px ;
+
+}
+.nav-items a { 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size:1.2rem;
+    font-weight: bold;
+
+}
+a:hover { 
+    background-color:white;
+    color:black ;
+}
+
+/*=============================================
+=            Middel          =
+=============================================*/
+#middel-part { 
+    grid-column: 2/10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: stretch;
+}
+.project-card { 
+    margin: 10px 20px;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3px;
+    box-shadow: 4px 3px   rgba(148, 148, 148, 0.733);
+  
+}
+
+.project-card img { 
+    margin-top: 5px;
+    align-self: center;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5px;}
+.project-card h3 , h4 {
+    font-family: 'Roboto Slab', serif; 
+    padding: 8px;
+}
+.project-card p, em{ 
+    padding: 0px 10px
+}
+.project-card a  { 
+    align-self: center;
+    margin: 10px;
+}
+.project-card button { 
+    background-color:#f44336 ;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius:10px ;
+
+}
+.project-card button:hover{ 
+    background-color: white ;
+    color: black;
+}
+#note { 
+    grid-column: span 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: grey;
+    margin: 10px 0px;
+
+}
+#note p {
+    color: white;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 1.5rem;;
+}
+/*=============================================
+=            Footer          =
+=============================================*/
+footer {
+    grid-column: span 10;  
+}
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contacts {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+}
+.contacts a {    padding: 10px;}
+
+
+/*=============================================
+=            Media Quiry          =
+=============================================*/
+
+/* for phones */
+@media only screen and (max-width: 550px) {
+   
+    .nav-items a {
+        font-size: 0.8 rem;
+        padding: 8px ;
+    }
+    #middel-part { 
+        grid-column: span 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

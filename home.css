@@ -1,286 +1,204 @@
-*{
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif; 
+#f44336
+background-color #f1f1f1
+*/
+
+* { padding: 0px;
     margin: 0px;
-
+    font-family: 'Roboto', sans-serif;
 }
-html, body{
-    height: auto;
-    width: 100%;
+#page-wraper { 
     box-sizing: border-box;
-    padding: 0px;
-    font-family: 'Montserrat', sans-serif;
+    height: 100% vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    gap: 10px;
+    align-items: center;
 }
 
-#grid__holder {
-    display: grid;
-    grid-template-rows: minmax(60px, auto);
-    grid-template-areas: 
-    "header header header"
-    "content content content"
-    "article article aside"
-    "footer footer footer"
-    ;
-   grid-template-columns: 25% 50% 25%;
-}
 /*=============================================
-=            Header comment block            =
+=            Uppper Part            =
 =============================================*/
 
 
-
-header {
-    grid-area: header;
-    background-color:#00204D ;
+.upper-container{
+    grid-column: span 10;
+    background-color:#f44336 ;
+    font-family: 'Roboto Mono', monospace;
     color: white;
+}
+nav {
+ padding: 10px 0px ;
+ border-bottom: 10px;
+ box-shadow: 0px 5px rgb(0,0,0,0.1) ;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+nav a:hover { 
+    background-color: white;
+    color: black;
+}
+
+
+.showcase { 
+ height: 400px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+
+}
+.showcase h1 { 
+    font-family: 'Roboto Slab', serif; 
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+
+/*=============================================
+=           Middel Part           =
+=============================================*/
+
+h2 {
+    padding: 10px;
+    font-family: 'Roboto Slab', serif; 
+    font-size: 2rem;
+}
+p {
+    padding: 5px 15px;
+    line-height: 1.2rem;
+}
+section img {
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+}
+section {
+    grid-column: 3/9;
+    display: grid;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.vision-w { 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.mission-w { 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 30px;
-  
 }
-header h1 {
-    margin-left: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    
-
-}
-.menu {
-    position: relative;
-    display: inline-block;
-    z-index: 10; 
-    margin-right: 10px;
-}
-.menu-hover {
-       
-     display: inline-block;
-    
-}
-.menu:hover {
-    background-color: #6068FC;
-}
-.menu-item {
-    position: absolute;
-    display: none;
-    top: 100%;
-    right: 1px;
-    min-width: 150px;
-    background-color: white;
-   
-}
-.menu-item a {
-    text-decoration: none;
-    color: #730004;
-    display: block;
-    font-size: 1.4rem;
-    text-align: center;
-}
-.menu:hover .menu-item {
-    display: block;
+ul  {
+    padding-left: 35px; 
 }
 
-/*=============================================
-=            Maain comment block            =
-=============================================*/
-
-
-section {
-    grid-area: content;
- }
-.banner-text {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    z-index: 5;
-    border: 5px solid yellow;
-    text-align: center;
-    transform: translate(50%, -50%);
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 25px;
-    font-family: 'Lobster', sans-serif;
-    background-color: rgba(0, 0, 0, 0.308);
-    box-shadow: 3px 3px rgba(192, 192, 22, 0.507);
+#quote {
+    grid-column: span 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.banner-text h2 {
-    font-size: 50px;
-    
-    padding: 10px 0px;
-}
-
-.img_banner {
-    background-image: url("img/slear.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    max-width: 100%;
-    height: 500px;
-    position: relative  ;
-    filter: blur(1px);
-  
-}
-
-article {
-    grid-area: article  ;
-    background-color: white;
-}
-.art_w {
-    margin: 10px;
-    
-}
-.art_w h2 {
-    padding: 8px 0px 5px 5px;
-    font-weight: bold;
-} 
-
-.art_one_w li {
-    list-style: none;
-    padding: 5px 0px;
-}
-
-.art_two_w p {
-    padding: 5px 10px;
-    line-height: 1.25rem;
+    background-color: grey;
 
 }
-
-/*----------  Subsection comment block  ----------*/
-aside {
-    grid-area: aside;
-    background-color: #003073;
+#quote div {
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 1.5rem;
 }
-.form-w {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0px;
-    margin: 10px 0px;
-}
-.form-w h3 {
-    margin-bottom: 5px;
-    padding: 10px;
-    text-align: center;
-}
-
-.universal_form input {
-    box-sizing: border-box;
-    display: block;
-    width: 90%;
-    margin: 5px;
-    background-color: white;
-    border: 2px solid rgb(250, 221, 176);
-    border-radius: 5px;
-    height: 25px ;
-    }
-.universal_form label {
-    margin: 8px 5px;
-  
-    }
-  #btn__universal {
-    background-color: white;
-    max-width: 50%;
-    padding: 10px;
-    border-bottom: none;
-    box-shadow: -2px 3px rgb(250, 221, 176) ;
-    border-bottom: none;
-    margin: auto;
-    height: auto;
-    font-size: 18px;
-  }
-  #btn__universal:hover {
-    background-color: bisque;
-    box-shadow: inset -2px 3px rgb(247, 247, 247);
-    font-weight: bold;
-    border: none;
-  }
-
-
 /*=============================================
-=            footer comment block            =
+=            Footer             =
 =============================================*/
-
 
 footer {
-    grid-area: footer;
-    background-color: #00204D;
-    color: white;
-    padding: 15px 0px;
+    grid-column: span 10;  
 }
 .copyrights {
-    text-align: center;
-    font-size: 18pt;
-}
-.contact {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0px auto;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
-.phone {
-display: flex;
-align-items: center;
-flex-direction: column;
+.contacts {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
 }
-.phone p {
-    padding-top: 8px;
-}
-
-.contact img {
-    width: 50px;
-    height: 50px;
-
-}
+.contacts a {    padding: 10px;}
 
 
-/**
- *
- * Media Quries
- *
- */
+
+/*=============================================
+=          Meidia Quaries          =
+=============================================*/
+
+
+/* for tablets */
 
 
 @media only screen and (max-width: 600px) {
-    #grid__holder {
-        grid-template-areas: 
-        "header "
-        "content"
-        "article" 
-        "aside"
-        "footer"
-        ;
-       grid-template-columns: 100%;
+   
+    .upper-container {
+        grid-column: span 10;
+    }
+    section { 
+        grid-column: 3/9;
+        display: grid;
+        justify-items: center;    }
+     .text-vision { 
+        grid-column: 3/9;
+        grid-row: 3/4;
+    }
+    .image-vision {
+        grid-column: 3/9;
+        grid-row: 2/3;
+    }
+    .text-mission { 
+        grid-column: 3/9;
+    }
+    .image-mission{
+        grid-column: 3/9;
+    }
+    #quote div { 
+        font-size: 1.2rem;
+    }
 }
-aside {
-    flex-direction: column;
-}
-.form-w {
-    align-items: center;
-    
-}
-form input {
-    width: 100%;
-}
-.banner-text {
-    font-size: 20px;
-    height: 150px;
-    width: 300px;
-    padding: 5px;
-    border-width: 3px;
-}
-.banner-text h2 {
-    font-size: 38px;
-    padding: 5px 0px;
-}
+/* for phones */
+@media only screen and (max-width: 600px) {
+   
+    .upper-container {
+        grid-column: span 10;
+    }
+    section { 
+        grid-column: span 10;
+        display: grid;
+        justify-items: center;    }
+
+     .vision-w { 
+        flex-direction: column-reverse;
+    }
+    .mission-w { 
+        flex-direction: column-reverse;
+
+    }
+    #quote div { 
+        font-size: 1.2rem;
+    }
+    nav a {
+        font-size: 1 rem;
+        padding: 8px ;
+    }
 }

@@ -1,0 +1,203 @@
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif; 
+#f44336
+background-color #f1f1f1
+*/ 
+
+/*=============================================
+=           Global           =
+=============================================*/
+
+* { padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+#page-wraper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+/*=============================================
+=            Header         =
+=============================================*/
+#upper-part { 
+    grid-column: span 10;
+    background-color:#f44336 ;
+    height: 40px;
+    box-shadow: 0px 3px #c716096b ;
+}
+.nav-items { 
+    margin: 10px 0px ;
+
+}
+.nav-items a { 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size:1.2rem;
+    font-weight: bold;
+
+}
+a:hover { 
+    background-color:white;
+    color:black ;
+}
+
+/*=============================================
+=            Middel          =
+=============================================*/
+#about { 
+    grid-column: 2/5;
+    grid-row: span 4;
+    height: auto;
+    box-shadow: 4px 2px #6e100a60;
+    display: flex;
+    flex-direction: column;   
+}
+ .info-w
+ { 
+     margin: 10px 0px;
+ }
+.info { 
+    display: flex;
+    align-items: center;
+}
+.info img { margin-right: 5px;}
+
+.skills {
+    margin: 10px 0px;
+}
+.skills p { 
+    font-weight: bold;
+    padding: 2.5px 0px 2.5px 5px;
+}
+.main { 
+    width: 90%; 
+    height: 1.3em;
+    background-color: rgb(230, 230, 230);
+  /*  border: 1px rgb(51, 51, 51) solid;*/
+    border-radius: 0.7em;
+    overflow: hidden;
+}
+.fill-probar { 
+    width: 60%;    
+    background-color: #ce4036;
+    color:white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.languages span {  font-weight: bold;}
+.languages p {padding: 5px 10px;}
+
+
+/**
+ * Aside
+ */
+ #education {
+    grid-column: 5/10; 
+    grid-row: 2/3;
+    box-shadow: 2px 4px #6e100a60;
+    margin-left: 5px;
+}
+#education p { 
+ padding: 0px 20px;
+}
+
+#xperience {
+    grid-column: 5/10; 
+    grid-row: 3/4;
+    box-shadow: 2px 4px #6e100a60;
+    margin-left: 5px;
+}
+
+.title-style { 
+    padding: 8px 5px;
+}
+.title-style  span{ 
+    font-size: .8em;
+    color: darkgray;
+    font-weight: lighter;
+}
+.text-style p { 
+    padding-left: 10px;
+}
+
+#achievements { 
+    grid-column: 5/10; 
+    grid-row: 4/6;
+    box-shadow: 2px 4px #6e100a60;
+    margin-left: 5px;
+}
+ul { 
+    margin-left: 20px;
+    list-style: square;
+}
+/*=============================================
+=            Footer          =
+=============================================*/
+footer {
+    grid-column: span 10;  
+}
+.copyrights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+.contacts {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+}
+.contacts a {    padding: 10px;}
+
+
+/*=============================================
+=            Media Quiry          =
+=============================================*/
+
+@media only screen and (max-width: 550px) {
+    #page-wraper {
+        
+        grid-template-rows: repeat(6, auto);
+        
+    }
+    
+
+    #about { 
+        grid-column: 2/10;
+        grid-row: 2/3;
+ 
+    } 
+     #education { 
+         grid-column: 2/10;
+         grid-row: 3/4;
+        
+    }
+    #xperience { 
+        grid-column: 2/10;
+        grid-row: 4/5;
+
+      
+    } 
+
+    #achievements{
+      grid-column:2/10;
+      grid-row: 5/6 ;
+    }
+    nav a {
+        font-size: 1 rem;
+        padding: 8px ;
+    }
+}
+
