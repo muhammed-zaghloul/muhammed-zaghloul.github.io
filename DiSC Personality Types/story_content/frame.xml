@@ -68,11 +68,7 @@
           <option name="pauseplay" value="false" />
           <option name="replay" value="false" />
           <option name="search" value="false" />
-          <option name="closed_captions" value="false">
-            <options>
-              <option name="font" value="Proxima Nova Bl" />
-            </options>
-          </option>
+          <option name="closed_captions" value="false" />
           <option name="settings" value="true" />
           <option name="fullScreenToggle" value="true" />
           <option name="playbackSpeedControl" value="false" />
@@ -88,6 +84,15 @@
           <option name="next" value="icontext" />
           <option name="previous" value="icontext" />
           <option name="submit" value="icontext" />
+        </options>
+      </optiongroup>
+      <optiongroup name="ccOptions">
+        <options>
+          <option name="font" value="Proxima Nova Bl" />
+          <option name="size" value="100" />
+          <option name="placement" value="100" />
+          <option name="backgroundColor" value="#000000FF" />
+          <option name="color" value="#FFFFFFFF" />
         </options>
       </optiongroup>
     </optiongroups>

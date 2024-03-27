@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <!-- Created using Storyline 360 - http://www.articulate.com  -->
-  <!-- version: 3.84.31722.0 -->
+  <!-- version: 3.86.32028.0 -->
   <title>DiSC Personality Types</title>
   <meta http-equiv="x-ua-compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no,minimal-ui"/>
@@ -28,16 +28,16 @@
       captureRc: false,
       browserSize: 'optimal',
       bgColor: '#282828',
-      features: 'BackgroundAudioVolumeVariable,ConnectionMessages,DropInBase,DropInMisc,DropInVectors,JsApi,LayerPresentAsDialog,MultipleQuizTracking,PlayerTooltips,UpdatedThemeEditor',
+      features: 'ClosedCaptionsCustomization,DropInBase,DropInInteractions,DropInMisc,DropInVectors,DropInVideo,JsApi,LayerPresentAsDialog,MultipleQuizTracking,UpdatedThemeEditor',
       themeName: 'unified',
       preloaderColor: '#FFFFFF',
       suppressAnalytics: false,
       productChannel: 'stable',
       publishSource: 'storyline',
-      aid: 'aid|44d2ae1d-5a14-486c-902f-e205ac8bc197',
+      aid: 'aid|1eb0fb56-293a-436b-83c0-be0092454649',
       cid: 'cdcc4669-24e0-4dc7-b855-9cf15af1bd87',
-      playerVersion: '3.84.31722.0',
-      publishTimestamp: '2024-02-13T02:11:46.0038873Z',
+      playerVersion: '3.86.32028.0',
+      publishTimestamp: '2024-03-27T02:17:56.9024735Z',
       maxIosVideoElements: 10,
       connectionSettings: { message: 'You%20are%20offline.%20Trying%20to%20reconnect...', useDarkTheme: false, mode: 'disabled' },
       hasFeature: function(feature) {
@@ -252,11 +252,8 @@
 
     var connectionSettings = window.globals.connectionSettings || {};
 
-    // The `window.globals.features` variable must be set in `webpack.dev.config` when testing locally - it is not enough
-    // to have it in the data - but it must be set there as well.
     var useConnectionMessages = window.AbortController != null &&
       window.location.protocol != 'file:' &&
-      window.globals.features.indexOf('ConnectionMessages') != -1 &&
       connectionSettings.mode === 'normal';
 
     window.DS.connection.useConnectionMessages = useConnectionMessages;
